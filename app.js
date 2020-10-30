@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-const port = 3000;
+const port = (process.env.PORT || 3000);
 
 app.use('/static', express.static(path.join(__dirname + '/static')));
 
