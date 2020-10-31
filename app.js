@@ -9,5 +9,9 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+app.get('/ttowayo-dashbord-site', function(req, res) {
+    res.sendFile(path.join(__dirname + '/ttowayo-dashbord-site.html'));
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
